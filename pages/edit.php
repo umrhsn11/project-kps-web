@@ -34,6 +34,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html lang="id">
 
 <head>
+    <header>
+        <h1>KRAPYAK PEDULI SAMPAH</h1>
+    </header>
     <meta charset="UTF-8">
     <title>Edit Produk</title>
     <style>

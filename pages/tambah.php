@@ -1,7 +1,5 @@
 <?php
 
-// Try to load the Produk class file. If the direct file isn't present,
-// attempt to load any PHP file in the classes directory as a fallback.
 require_once __DIR__ . '/../classes/Produk.php';
 if (!class_exists('Produk')) {
     foreach (glob(__DIR__ . '/../classes/*.php') as $file) {
@@ -36,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Tambah Produk</title>
+    <title>KRAPYAK PEDULI SAMPAH</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
 

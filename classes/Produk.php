@@ -2,24 +2,6 @@
 
 require_once __DIR__ . '/Database.php';
 
-<<<<<<< HEAD
-
-=======
-/**
- * Class Produk
- * 
- * INHERITANCE: Class ini mewarisi class Database,
- * sehingga otomatis mendapatkan koneksi database.
- * 
- * Konsep OOP yang diterapkan:
- * - Class & Object
- * - Property & Method
- * - Constructor
- * - Inheritance
- * - Encapsulation / Visibility (public, protected, private)
- * - Getter & Setter
- */
->>>>>>> 5e6e10f712341319fcd275887a5a366f888e3de6
 class Produk extends Database
 {
     // PRIVATE PROPERTY - hanya bisa diakses di dalam class ini
@@ -39,15 +21,6 @@ class Produk extends Database
         parent::__construct();
     }
 
-<<<<<<< HEAD
-=======
-    // ============================================================
-    //  GETTER & SETTER
-    //  Getter = mengambil nilai property private
-    //  Setter = mengubah nilai property private
-    // ============================================================
-
->>>>>>> 5e6e10f712341319fcd275887a5a366f888e3de6
     public function getNama() { return $this->nama; }
     public function getJenis() { return $this->jenis; }
     public function getHarga() { return $this->harga; }
@@ -60,17 +33,8 @@ class Produk extends Database
     public function setStok($stok)   { $this->stok = $stok; }
     public function setJenisStok($jenis_stok) { $this->jenis_stok = $jenis_stok; }
 
-<<<<<<< HEAD
-=======
+    // CREATE - Tambah data produk baru
 
-    // ============================================================
-    //  METHOD CRUD
-    // ============================================================
-
->>>>>>> 5e6e10f712341319fcd275887a5a366f888e3de6
-    /**
-     * CREATE - Tambah data produk baru
-     */
     public function tambah()
     {
         $sql = "INSERT INTO {$this->table} (nama, jenis, harga, stok, jenis_stok) 
@@ -81,9 +45,8 @@ class Produk extends Database
         return $stmt->execute();
     }
 
-    /**
-     * READ - Ambil semua data produk
-     */
+    // READ - Ambil semua data produk
+
     public function ambilSemua()
     {
         $sql    = "SELECT * FROM {$this->table} ORDER BY id DESC";
@@ -92,9 +55,8 @@ class Produk extends Database
         return $result->fetch_all(MYSQLI_ASSOC);
     }
 
-    /**
-     * READ - Ambil satu data berdasarkan ID
-     */
+    // READ - Ambil satu data berdasarkan ID
+
     public function ambilSatu($id)
     {
         $sql  = "SELECT * FROM {$this->table} WHERE id = ?";
@@ -105,9 +67,8 @@ class Produk extends Database
         return $stmt->get_result()->fetch_assoc();
     }
 
-    /**
-     * UPDATE - Ubah data produk
-     */
+    // UPDATE - Ubah data produk
+
     public function ubah($id)
     {
         $sql = "UPDATE {$this->table} 
@@ -120,9 +81,8 @@ class Produk extends Database
         return $stmt->execute();
     }
 
-    /**
-     * DELETE - Hapus data produk
-     */
+    // DELETE - Hapus data produk
+    
     public function hapus($id)
     {
         $sql  = "DELETE FROM {$this->table} WHERE id = ?";

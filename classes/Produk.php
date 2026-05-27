@@ -2,7 +2,24 @@
 
 require_once __DIR__ . '/Database.php';
 
+<<<<<<< HEAD
 
+=======
+/**
+ * Class Produk
+ * 
+ * INHERITANCE: Class ini mewarisi class Database,
+ * sehingga otomatis mendapatkan koneksi database.
+ * 
+ * Konsep OOP yang diterapkan:
+ * - Class & Object
+ * - Property & Method
+ * - Constructor
+ * - Inheritance
+ * - Encapsulation / Visibility (public, protected, private)
+ * - Getter & Setter
+ */
+>>>>>>> 5e6e10f712341319fcd275887a5a366f888e3de6
 class Produk extends Database
 {
     // PRIVATE PROPERTY - hanya bisa diakses di dalam class ini
@@ -22,6 +39,15 @@ class Produk extends Database
         parent::__construct();
     }
 
+<<<<<<< HEAD
+=======
+    // ============================================================
+    //  GETTER & SETTER
+    //  Getter = mengambil nilai property private
+    //  Setter = mengubah nilai property private
+    // ============================================================
+
+>>>>>>> 5e6e10f712341319fcd275887a5a366f888e3de6
     public function getNama() { return $this->nama; }
     public function getJenis() { return $this->jenis; }
     public function getHarga() { return $this->harga; }
@@ -34,6 +60,14 @@ class Produk extends Database
     public function setStok($stok)   { $this->stok = $stok; }
     public function setJenisStok($jenis_stok) { $this->jenis_stok = $jenis_stok; }
 
+<<<<<<< HEAD
+=======
+
+    // ============================================================
+    //  METHOD CRUD
+    // ============================================================
+
+>>>>>>> 5e6e10f712341319fcd275887a5a366f888e3de6
     /**
      * CREATE - Tambah data produk baru
      */

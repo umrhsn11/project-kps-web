@@ -150,7 +150,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
 
     <header>
+<<<<<<< HEAD
         <h1>KRAPYAK PEDULI SAMPAH</h1>
+=======
+        <h1>Sistem Data Produk</h1>
+>>>>>>> 5e6e10f712341319fcd275887a5a366f888e3de6
     </header>
 
     <div class="container">
@@ -203,4 +207,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 </body>
 
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> 5e6e10f712341319fcd275887a5a366f888e3de6

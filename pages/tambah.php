@@ -110,7 +110,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
 
 <header>
-    <h1>Sistem Data Produk</h1>
+    <h1>KRAPYAK PEDULI SAMPAH</h1>
 </header>
 
 <div class="container">
